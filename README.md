@@ -6,9 +6,9 @@ A summary on 3D human pose estimation
 Yating Tian, Hongwen Zhang, Yebin Liu, Limin Wang</br>
 
 ## Body Models
-* SCAPE: [SCAPE: Shape Completion and Animation of People.](https://ai.stanford.edu/~drago/Papers/shapecomp.pdf)</br> ACM Trans. Graphics, 2005
+* SCAPE: [SCAPE: Shape Completion and Animation of People.](https://ai.stanford.edu/~drago/Papers/shapecomp.pdf) ACM Trans. Graphics, 2005 </br>
 D. Anguelov, P. Srinivasan, D. Koller, S. Thrun, J. Rodgers, and J. Davis. </br>
-One Sentence Summary: First body model disentangling human body into rigid transformation of pose, id-related shape, and pose-related shape.
+<h3>Brief Summary</h3>: First body model disentangling human body into rigid transformation of pose, id-related shape, and pose-related shape.
 
 * SMPL: [SMPL: A Skinned Multi-Person Linear Model](https://smpl.is.tue.mpg.de)</br>
 Loper, Matthew and Mahmood, Naureen and Romero, Javier and Pons-Moll, Gerard and Black, Michael J.</br>
