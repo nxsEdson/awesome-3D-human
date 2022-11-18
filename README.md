@@ -2,13 +2,13 @@
 A summary on 3D human pose estimation
 
 ## Survey
-*[Recovering 3D Human Mesh from Monocular Images: A Survey](https://arxiv.org/abs/2203.01923)</br>
+* [Recovering 3D Human Mesh from Monocular Images: A Survey](https://arxiv.org/abs/2203.01923)</br>
 Yating Tian, Hongwen Zhang, Yebin Liu, Limin Wang</br>
 
 ## Body Models
 * SCAPE: [SCAPE: Shape Completion and Animation of People](https://ai.stanford.edu/~drago/Papers/shapecomp.pdf)</br>
-D. Anguelov, P. Srinivasan, D. Koller, S. Thrun, J. Rodgers, and J. Davis</br>
-ACM Trans. Graphics, 2005
+D. Anguelov, P. Srinivasan, D. Koller, S. Thrun, J. Rodgers, and J. Davis. ACM Trans. Graphics, 2005
+One word summary: First body model disentangling human body into rigid transformation of pose, id-related shape, and pose-related shape.
 
 * SMPL: [SMPL: A Skinned Multi-Person Linear Model](https://smpl.is.tue.mpg.de)</br>
 Loper, Matthew and Mahmood, Naureen and Romero, Javier and Pons-Moll, Gerard and Black, Michael J.</br>
