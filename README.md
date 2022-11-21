@@ -24,23 +24,97 @@ Yating Tian, Hongwen Zhang, Yebin Liu, Limin Wang</br>
 * **\[GHUM\]** [GHUM & GHUML: Generative 3D Human Shape and Articulated Pose Models](https://openaccess.thecvf.com/content_CVPR_2020/papers/Xu_GHUM__GHUML_Generative_3D_Human_Shape_and_Articulated_Pose_CVPR_2020_paper.pdf) Hongyi Xu, Eduard Gabriel Bazavan, Andrei Zanfir, William T. Freeman, Rahul Sukthankar, Cristian Sminchisescu. *CVPR 2020* </br>
 **One Sentence Summary**: Human body model with non-linear (VAEs) id-related shape and face expression embedding spaces.
 
-## 3D Human Pose Estimation 
+## Human Mesh Recovery
 
-### Optimization-based Method 
+### From Single Images
+
+* **\[SMPLify\]** [Keep it SMPL: Automatic Estimation of 3D Human Pose and Shape from a Single Image.](https://smplify.is.tue.mpg.de) Bogo, Federica and Kanazawa, Angjoo and Lassner, Christoph and Gehler, Peter and Romero, Javier and Black, Michael J. *ECCV 2016* </br>
+**One Sentence Summary**: One optimizion-based method using the reprojection loss of keypoints as well as several regularization terms.
+
+* **\[HMR\]** [End-to-end Recovery of Human Shape and Pose.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Kanazawa_End-to-End_Recovery_of_CVPR_2018_paper.pdf) Angjoo Kanazawa, Michael J. Black, David W. Jacobs, Jitendra Malik. *CVPR 2018* </br>
+**One Sentence Summary**: Human mesh recovery using reprojection loss of keypoints and adversary training to avoid unreasonable pose.
+
+* **\[SPIN\]** [SPIN：Learning to Reconstruct 3D Human Pose and Shape via Model-fitting in the Loop.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Kolotouros_Learning_to_Reconstruct_3D_Human_Pose_and_Shape_via_Model-Fitting_ICCV_2019_paper.pdf) Kolotouros, Nikos and Pavlakos, Georgios and Black, Michael J and Daniilidis, Kostas. *ICCV 2019* </br>
+**One Sentence Summary**: HMR + SMPLify (HMR is used to inilize the body model parameters & SMPLify is used to refine these parameters. The refined parameters are further used as the surpervision for the network.)
+
+* [On the Continuity of Rotation Representations in Neural Networks.](https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhou_On_the_Continuity_of_Rotation_Representations_in_Neural_Networks_CVPR_2019_paper.pdf) Yi Zhou, Connelly Barnes, Jingwan Lu, Jimei Yang, and Hao Li. *CVPR 2019* </br>
+**One Sentence Summary**: A new continuous representations for joint rotation.
+
+* **\[PyMAF\]** [PyMAF: 3D Human Pose and Shape Regression with Pyramidal Mesh Alignment Feedback Loop.](https://github.com/HongwenZhang/PyMAF) Zhang, Hongwen and Tian, Yating and Zhou, Xinchi and Ouyang, Wanli and Liu, Yebin and Wang, Limin and Sun, Zhenan. *ICCV 2021* </br>
+**One Sentence Summary**: HMR (body model parameters regression network) using mesh-aligned multi-scale features & densepose supervisions.
 
 
-### Regression-based Method
+### From Videos 
+
+* [Learning 3D Human Dynamics from Video.](https://openaccess.thecvf.com/content_CVPR_2019/papers/Kanazawa_Learning_3D_Human_Dynamics_From_Video_CVPR_2019_paper.pdf) Angjoo Kanazawa, Jason Y. Zhang, Panna Felsen, Jitendra Malik *CVPR 2019* </br>
+**One Sentence Summary**: A temporal encoder with sliding windows and a hallucinator for the current time step to predict the pose of current and adjacent frames. 
+
+* **\[VIBE\]** [VIBE: Video Inference for Human Body Pose and Shape Estimation.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Kocabas_VIBE_Video_Inference_for_Human_Body_Pose_and_Shape_Estimation_CVPR_2020_paper.pdf) Muhammed Kocabas, Nikos Athanasiou, Michael J. Black. *CVPR 2020* </br>
+**One Sentence Summary**: Temporal HMR (CNN+GRU for parameters regression & adversary training to avoid unreasonable temporal actions.)
+
+* **\[SmoothNet\]** [SmoothNet: A Plug-and-Play Network for Refining Human Poses in Videos.](https://github.com/cure-lab/SmoothNet) Zeng, Ailing and Yang, Lei and Ju, Xuan and Li, Jiefeng and Wang, Jianyi and Xu, Qiang. *ECCV 2022* </br>
+**One Sentence Summary**: A pligin module to reduce jitter influence.
+
+* **\[GLAMR\]** [GLAMR: Global Occlusion-Aware Human Mesh Recovery with Dynamic Cameras.](https://github.com/NVlabs/GLAMR) Ye Yuan, Umar Iqbal, Pavlo Molchanov, Kris Kitani, Jan Kautz. *CVPR 2022* </br>
+**One Sentence Summary**: 
+
+* [Human Mesh Recovery from Multiple Shots.](https://geopavlakos.github.io/multishot/) Georgios Pavlakos Jitendra Malik Angjoo Kanazawa *CVPR 2022* </br>
+**One Sentence Summary**: Using SPIN with smoothness term of canonical frame to get the ground-truth. Then using the ground-truth pose to train temporal HMR with transformer.
 
 
+### Beyond Single Person Mesh Recovery (considering environment or multiperson)
+
+* [The One Where They Reconstructed 3D Humans and Environments in TV Shows.](https://ethanweber.me/sitcoms3D/) Georgios Pavlakos and Ethan Weber and and Matthew Tancik and Angjoo Kanazawa *ECCV 2022* </br>
+**One Sentence Summary**: Improving the recovery of 3D human for TV shows by reconstructing the environment and estimating the camera and body scale information.
+
+ * **\[PHOSA\]** [Perceiving 3D Human-Object Spatial Arrangements from a Single Image in the Wild.](https://jasonyzhang.com/phosa/) Zhang, Jason Y. and Pepose, Sam and Joo, Hanbyul and Ramanan, Deva and Malik, Jitendra and Kanazawa, Angjoo. *ECCV 2020* </br>
+**One Sentence Summary**: . 
+
+ * **\[ROMP\]** [Monocular, One-stage, Regression of Multiple 3D People.](https://github.com/Arthur151/ROMP) Sun, Yu and Bao, Qian and Liu, Wu and Fu, Yili and Michael J., Black and Mei, Tao. *ICCV 2021* </br>
+**One Sentence Summary**: .
+
+ * **\[BEV\]** [Putting People in their Place: Monocular Regression of 3D People in Depth.](https://arthur151.github.io/BEV/BEV.html) Sun, Yu and Liu, Wu and Bao, Qian and Fu, Yili and Mei, Tao and Black, Michael J.. *CVPR 2022* </br>
+**One Sentence Summary**: .
 
 
-## Detailed Human Body Recovery (Clothing)
+### Beyond Body Models (meshes, voxel, and etc.)
+
+* **\[BodyNet\]** [BodyNet: Volumetric Inference of 3D Human Body Shapes.](https://github.com/gulvarol/bodynet) Gül Varol, Duygu Ceylan, Bryan Russell, Jimei Yang, Ersin Yumer, Ivan Laptev and Cordelia Schmid. *ECCV 2018* </br>
+**One Sentence Summary**: Volumetric Inference with the supervision of 2d & 3d keypoints, segmentations and voxelized SMPL model.
+
+* **\[GraphCMR\]** [Convolutional Mesh Regression for Single-Image Human Shape Reconstruction.](https://github.com/nkolot/GraphCMR) Nikos Kolotouros, Georgios Pavlakos, Kostas Daniilidis. *CVPR 2019* </br>
+**One Sentence Summary**: Directly regressing the meshes of human body with graph convolutions.
+
+* **\[I2L-MeshNet\]** [I2L-MeshNet: Image-to-Lixel Prediction Network for Accurate 3D Human Pose and Mesh Estimation from a Single RGB Image.](https://github.com/mks0601/I2L-MeshNet_RELEASE) Gyeongsik Moon and Kyoung Mu Lee. *ECCV 2020* </br>
+**One Sentence Summary**: Regressing 2d & 3d key points firstly, and then regressing the mesh directly.
 
 
+## Applications
 
-## Releated Research Groups
+### Tracking
+* **\[HMAR\]** [Tracking People with 3D Representations.](http://people.eecs.berkeley.edu/~jathushan/T3DP/) Jathushan Rajasegaran, Georgios Pavlakos, Angjoo Kanazawa, and Jitendra Malik *NeurIPS 2021* </br>
+**One Sentence Summary**: HMR + texture recovery (using appearance flow) for human tracking. 
+
+* **\[PHALP\]** [Tracking People by Predicting 3D Appearance, Location and Pose.](http://people.eecs.berkeley.edu/~jathushan/PHALP/) Rajasegaran, Jathushan and Pavlakos, Georgios and Kanazawa, Angjoo and Malik, Jitendra *CVPR 2022* </br>
+**One Sentence Summary**: Predicting and matching HMAR estimation for tracking in videos. 
+
+### Motion prediction
+* **\[PHD\]** [Predicting 3D Human Dynamics from Video.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhang_Predicting_3D_Human_Dynamics_From_Video_ICCV_2019_paper.pdf) Jason Y. Zhang, Panna Felsen, Angjoo Kanazawa, Jitendra Malik *ICCV 2019* </br>
+**One Sentence Summary**: "Learning 3D Human Dynamics from Video" for 3D motion prediction.
+
+
+## Related Topic
+### Detailed 3D Human Recovery (Clothing)
+### 3D Face
+### 3D Hand 
+### Dense Pose Estimation
+### Human Pose Prediction
+
+## Related Research Groups
 [Michael Black](http://ps.is.mpg.de) (Max Planck Institute for Intelligent Systems) </br>
 [Yebin Liu](http://www.liuyebin.com) (Tsinghua University) </br>
 [Kyoung Mu Lee](https://cv.snu.ac.kr/index.php/~kmlee/) (Seoul National University) </br>
 [Yaser Sheikh](https://scholar.google.com/citations?user=Yd4KvooAAAAJ&hl=en) (Carnegie Mellon University, Facebook Reality Labs) </br>
+[Angjoo Kanazawa](https://people.eecs.berkeley.edu/~kanazawa/)(University of California, Berkeley) </br>
+[Kostas Daniilidis](http://www.cis.upenn.edu/~kostas)(University of Pennsylvania) </br>
 
