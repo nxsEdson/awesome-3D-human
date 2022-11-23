@@ -1,5 +1,5 @@
-# Awesome-3D-Human-Pose
-A summary on 3D human pose estimation
+# Awesome-3D-Human
+A summary on 3D human mesh recovery
 
 ## Survey
 * [Recovering 3D Human Mesh from Monocular Images: A Survey](https://arxiv.org/abs/2203.01923)</br>
