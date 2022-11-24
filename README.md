@@ -105,27 +105,38 @@ Yating Tian, Hongwen Zhang, Yebin Liu, Limin Wang</br>
 * **\[GLAMR\]** [GLAMR: Global Occlusion-Aware Human Mesh Recovery with Dynamic Cameras.](https://github.com/NVlabs/GLAMR) Ye Yuan, Umar Iqbal, Pavlo Molchanov, Kris Kitani, Jan Kautz. *CVPR 2022* </br>
 **One Sentence Summary**: Solving the occlusion problem with the prior of dynamic camera.
 
-* [Human Mesh Recovery from Multiple Shots.](https://geopavlakos.github.io/multishot/) Georgios Pavlakos Jitendra Malik Angjoo Kanazawa *CVPR 2022* </br>
+* **\[\]** [Human Mesh Recovery from Multiple Shots.](https://geopavlakos.github.io/multishot/) Georgios Pavlakos Jitendra Malik Angjoo Kanazawa *CVPR 2022* </br>
 **One Sentence Summary**: Using SPIN with smoothness term of canonical frame to get the ground-truth. Then using the ground-truth pose to train temporal HMR with transformer.
 
 ### For Multiple Persons
 
+* **\[\]** [Monocular 3d pose and shape estimation of multiple people in natural scenes-the importance of multiple scene constraints.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zanfir_Monocular_3D_Pose_CVPR_2018_paper.pdf) Zanfir A, Marinoiu E, Sminchisescu C. *CVPR 2018* </br>
+**One Sentence Summary**: Optimizing the pose of multiple person with the plane-groud assumption, occupancy avoidance, and temporal smoothness.
+
+* **\[HMOR\]** [HMOR: Hierarchical Multi-Person Ordinal Relations for Monocular Multi-Person 3D Pose Estimation.](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123480256.pdf) Can Wang, Jiefeng Li, Wentao Liu, Chen Qian, and Cewu Lu. *ECCV 2020* </br>
+**One Sentence Summary**: Improving multi-person 3D pose estimation using multi-person interaction relations considering instance and joints depth relations and body parts angle relations.
+
+* **\[\]** [Coherent Reconstruction of Multiple Humans from a Single Image.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Jiang_Coherent_Reconstruction_of_Multiple_Humans_From_a_Single_Image_CVPR_2020_paper.pdf) Wen Jiang, Nikos Kolotouros, Georgios Pavlakos, Xiaowei Zhou, and Kostas Daniilidis. *CVPR 2020* </br>
+**One Sentence Summary**: Training the network to estimate the SMPL parameters of all multiple persons with interpenetration loss (based on SDF) and depth-aware loss (based on instance segmentation.).
+
 * **\[BMP\]** [Body Meshes as Points.](https://github.com/jfzhang95/BMP) Zhang, Jianfeng and Yu, Dongdong and Liew, Jun Hao and Nie, Xuecheng and Feng, Jiashi *CVPR 2021* </br>
 **One Sentence Summary**: One-stage model to estimate multiple persons' 3D body using the similar idea as one stage detection。
 
- * **\[ROMP\]** [Monocular, One-stage, Regression of Multiple 3D People.](https://github.com/Arthur151/ROMP) Sun, Yu and Bao, Qian and Liu, Wu and Fu, Yili and Michael J., Black and Mei, Tao. *ICCV 2021* </br>
+* **\[ROMP\]** [Monocular, One-stage, Regression of Multiple 3D People.](https://github.com/Arthur151/ROMP) Sun, Yu and Bao, Qian and Liu, Wu and Fu, Yili and Michael J., Black and Mei, Tao. *ICCV 2021* </br>
 **One Sentence Summary**: One-stage model to estimate multiple persons' 3D body using the similar idea as CenterNet.
 
  * **\[BEV\]** [Putting People in their Place: Monocular Regression of 3D People in Depth.](https://arthur151.github.io/BEV/BEV.html) Sun, Yu and Liu, Wu and Bao, Qian and Fu, Yili and Mei, Tao and Black, Michael J.. *CVPR 2022* </br>
-**One Sentence Summary**: .
+**One Sentence Summary**: Age-aware SMPL model (adding age-related offsets) + estimating bird's eye view feature to help to refine the depth relationship for multiple subjects.
 
 ### Considering Environment
 
-* **\[BodyNet\]** [BodyNet: Volumetric Inference of 3D Human Body Shapes.](https://github.com/gulvarol/bodynet) Gül Varol, Duygu Ceylan, Bryan Russell, Jimei Yang, Ersin Yumer, Ivan Laptev and Cordelia Schmid. *ECCV 2018* </br>
-**One Sentence Summary**: Volumetric Inference with the supervision of 2d & 3d keypoints, segmentations and voxelized SMPL model.
+* **\[\]** [Resolving 3D Human Pose Ambiguities with 3D Scene Constraints.](https://prox.is.tue.mpg.de) Mohamed Hassan, Vasileios Choutas, Dimitrios Tzionas and Michael J. Black *ICCV 2019* </br>
+**One Sentence Summary**: Improving the recovery of 3D human in a given 3D scene by considering the interation of human and scene layouts.
 
-* [The One Where They Reconstructed 3D Humans and Environments in TV Shows.](https://ethanweber.me/sitcoms3D/) Georgios Pavlakos and Ethan Weber and and Matthew Tancik and Angjoo Kanazawa *ECCV 2022* </br>
+* **\[\]** [The One Where They Reconstructed 3D Humans and Environments in TV Shows.](https://ethanweber.me/sitcoms3D/) Georgios Pavlakos and Ethan Weber and and Matthew Tancik and Angjoo Kanazawa *ECCV 2022* </br>
 **One Sentence Summary**: Improving the recovery of 3D human for TV shows by reconstructing the environment and estimating the camera and body scale information. 
+
+
 
 ### Beyond Body Models (meshes, voxel, and etc.)
 
@@ -151,11 +162,11 @@ Yating Tian, Hongwen Zhang, Yebin Liu, Limin Wang</br>
 ## Datasets
 
 ## Related Topic
-* Detailed 3D Human Recovery (Clothing)
-* 3D Face
-* 3D Hand 
-* Dense Pose Estimation
-* Human Pose Prediction
+* [Detailed 3D Human Recovery (Clothing)]
+* [3D Face]
+* [3D Hand]
+* [Dense Pose Estimation]
+* [Human Pose Prediction]
 
 ## Related Research Groups
 [Michael Black](http://ps.is.mpg.de) (Max Planck Institute for Intelligent Systems) </br>
