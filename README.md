@@ -128,6 +128,7 @@ Yating Tian, Hongwen Zhang, Yebin Liu, Limin Wang</br>
  * **\[BEV\]** [Putting People in their Place: Monocular Regression of 3D People in Depth.](https://arthur151.github.io/BEV/BEV.html) Sun, Yu and Liu, Wu and Bao, Qian and Fu, Yili and Mei, Tao and Black, Michael J.. *CVPR 2022* </br>
 **One Sentence Summary**: Age-aware SMPL model (adding age-related offsets) + estimating bird's eye view feature to help to refine the depth relationship for multiple subjects.
 
+
 ### Considering Environment
 
 * **\[\]** [Resolving 3D Human Pose Ambiguities with 3D Scene Constraints.](https://prox.is.tue.mpg.de) Mohamed Hassan, Vasileios Choutas, Dimitrios Tzionas and Michael J. Black *ICCV 2019* </br>
@@ -135,7 +136,6 @@ Yating Tian, Hongwen Zhang, Yebin Liu, Limin Wang</br>
 
 * **\[\]** [The One Where They Reconstructed 3D Humans and Environments in TV Shows.](https://ethanweber.me/sitcoms3D/) Georgios Pavlakos and Ethan Weber and and Matthew Tancik and Angjoo Kanazawa *ECCV 2022* </br>
 **One Sentence Summary**: Improving the recovery of 3D human for TV shows by reconstructing the environment and estimating the camera and body scale information. 
-
 
 
 ### Beyond Body Models (meshes, voxel, and etc.)
@@ -161,12 +161,22 @@ Yating Tian, Hongwen Zhang, Yebin Liu, Limin Wang</br>
 
 ## Datasets
 
+* [SURREAL](https://www.di.ens.fr/willow/research/surreal/) 
+* [AGORA](https://agora.is.tue.mpg.de/)
+* [THUman](https://github.com/ZhengZerong/DeepHuman/tree/master/THUmanDataset) 
+* [THUman2.0](https://github.com/ytrock/THuman2.0-Dataset) 
+* [ZJU-Mocap](https://github.com/zju3dv/neuralbody/blob/master/INSTALL.md#zju-mocap-dataset)
+* [Human3.6M](https://github.com/kotaro-inoue/human3.6m_downloader)
+* [MultiHuman](https://github.com/y-zheng18/MultiHuman-Dataset/)
+* [3DPW](https://virtualhumans.mpi-inf.mpg.de/3DPW/)
+* [HUMBI](https://humbi-data.net)
+* [EFT](https://github.com/facebookresearch/eft) (Fitting data)
+
 ## Related Topic
-* [Detailed 3D Human Recovery (Clothing)]
-* [3D Face]
-* [3D Hand]
-* [Dense Pose Estimation]
-* [Human Pose Prediction]
+* [Detailed 3D Human Recovery (Clothing)](https://github.com/weihaox/awesome-clothed-human）
+* [3D Face](https://paperswithcode.com/task/3d-face-reconstruction)
+* [3D Hand](https://github.com/SeanChenxy/Hand3DResearch)
+* [Human Pose Detection](https://github.com/cbsudux/awesome-human-pose-estimation)
 
 ## Related Research Groups
 [Michael Black](http://ps.is.mpg.de) (Max Planck Institute for Intelligent Systems) </br>
