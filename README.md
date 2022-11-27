@@ -173,7 +173,7 @@ Yating Tian, Hongwen Zhang, Yebin Liu, Limin Wang</br>
 * [EFT](https://github.com/facebookresearch/eft) (Fitting data)
 
 ## Related Topic
-* [Detailed 3D Human Recovery \(Clothing\)](https://github.com/weihaox/awesome-clothed-human）
+* [Detailed 3D Human Recovery \(Clothing\)](https://github.com/weihaox/awesome-clothed-human)
 * [3D Face](https://paperswithcode.com/task/3d-face-reconstruction)
 * [3D Hand](https://github.com/SeanChenxy/Hand3DResearch)
 * [Human Pose Detection](https://github.com/cbsudux/awesome-human-pose-estimation)
